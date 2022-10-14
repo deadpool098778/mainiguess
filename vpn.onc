@@ -1,0 +1,31 @@
+{
+  "Type": "UnencryptedConfiguration",
+  "NetworkConfigurations": [
+    {
+      "GUID": "{84391467-dd8b-4c66-9b52-860583038351}",
+      "Name": "Cool VPN",
+      "Type": "VPN",
+      "NameServersConfigType": "Static",
+      "StaticIPConfig": {
+        "NameServers": [
+          "8.8.8.8"
+        ]
+      },
+      "VPN": {
+        "AutoConnect": true,
+        "Host": "173.233.73.3",
+        "IPsec": {
+          "IKEVersion": 1,
+          "AuthenticationType": "PSK",
+          "PSK": "vpn",
+          "SaveCredentials": true
+        },
+        "L2TP": {
+          "Username": "vpn",
+          "Password": "vpn"
+        },
+        "Type": "L2TP-IPsec"
+      }
+    }
+  ]
+}
